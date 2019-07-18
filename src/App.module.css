@@ -1,0 +1,27 @@
+.main-body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 0;
+}
+
+.main-body:before {
+  content: '';
+  position: relative;
+  z-index: -1;
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  height: 100%;
+  background-color: #ffedf7;
+}
+
+.main-body:after {
+  content: '';
+  position: relative;
+  z-index: -1;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  height: 100%;
+  background-color: #003164;
+}
