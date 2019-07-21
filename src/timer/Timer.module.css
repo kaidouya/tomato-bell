@@ -1,0 +1,55 @@
+.timer-container {
+  position: absolute;
+  top: 150px;
+  right: 112px;
+  display: flex;
+  align-items: center;
+}
+
+/* 圓球本體 */
+.circle-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 540px;
+  height: 540px;
+  border: 4px solid #ff4384;
+  border-radius: 50%;
+}
+
+.circle-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background: #ff4384;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.play-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 96px;
+  font-size: 30px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.play-btn > .arrow-right {
+  color: #ff4384;
+  transform: scale(3);
+}
+
+.dot {
+  position: absolute;
+  bottom: 5px;
+  left: 115%;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+}
