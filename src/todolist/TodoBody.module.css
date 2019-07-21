@@ -1,0 +1,41 @@
+.todo-body {
+  display: inline-block;
+  width: 445px;
+}
+
+.ul-list {
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.ul-list > li {
+  color: #003164;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;
+  border-bottom: 1px solid rgba(0, 49, 100) \9;
+  border-bottom: 1px solid rgba(0, 49, 100, 0.2);
+}
+
+.ul-list > li > i {
+  position: relative;
+  top: 4px;
+  vertical-align: top;
+  margin-right: 6px;
+}
+
+/* .ul-list > li:before {
+  content: '';
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  vertical-align: top;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background: none;
+  border: 1px solid #003164;
+  border-radius: 50%;
+  cursor: pointer;
+} */

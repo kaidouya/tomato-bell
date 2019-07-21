@@ -1,0 +1,44 @@
+.input-body {
+  display: inline-block;
+  vertical-align: top;
+  width: 90%;
+  height: 56px;
+  padding-left: 16px;
+  color: #ff4384;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 56px;
+  border: none;
+  outline: none;
+}
+
+.input-body::-webkit-input-placeholder {
+  color: #ff4384;
+}
+/*Firefox 4-18瀏覽器專用*/
+.input-body::-moz-placeholder {
+  color: #ff4384;
+}
+/*Firefox 19+瀏覽器專用*/
+.input-body::-moz-placeholder {
+  color: #ff4384;
+}
+/*IE10瀏覽器專用*/
+.input-body:-ms-input-placeholder {
+  color: #ff4384;
+}
+
+.submit {
+  display: inline-block;
+  vertical-align: top;
+  width: 10%;
+  height: 56px;
+  padding: 0;
+  color: #ff4384;
+  font-size: 24px;
+  line-height: 56px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
