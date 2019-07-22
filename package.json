@@ -2,7 +2,7 @@
   "name": "tomato-bell",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kaidouya.github.io/tomato-bell/",
+  "homepage": "https:/kaidouya.github.io/tomato-bell",
   "dependencies": {
     "@material-ui/core": "^4.2.1",
     "normalize.css": "^8.0.1",
