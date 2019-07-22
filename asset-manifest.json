@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/kaidouya.github.io/tomato-bell/static/css/main.b9489aab.chunk.css",
-    "main.js": "/kaidouya.github.io/tomato-bell/static/js/main.d053fcd8.chunk.js",
-    "main.js.map": "/kaidouya.github.io/tomato-bell/static/js/main.d053fcd8.chunk.js.map",
-    "runtime~main.js": "/kaidouya.github.io/tomato-bell/static/js/runtime~main.a077bf5c.js",
-    "runtime~main.js.map": "/kaidouya.github.io/tomato-bell/static/js/runtime~main.a077bf5c.js.map",
-    "static/css/2.764ccc25.chunk.css": "/kaidouya.github.io/tomato-bell/static/css/2.764ccc25.chunk.css",
-    "static/js/2.bce4f8a0.chunk.js": "/kaidouya.github.io/tomato-bell/static/js/2.bce4f8a0.chunk.js",
-    "static/js/2.bce4f8a0.chunk.js.map": "/kaidouya.github.io/tomato-bell/static/js/2.bce4f8a0.chunk.js.map",
-    "index.html": "/kaidouya.github.io/tomato-bell/index.html",
-    "precache-manifest.9fbd23920a2b4aa47c775844054e937e.js": "/kaidouya.github.io/tomato-bell/precache-manifest.9fbd23920a2b4aa47c775844054e937e.js",
-    "service-worker.js": "/kaidouya.github.io/tomato-bell/service-worker.js",
-    "static/css/2.764ccc25.chunk.css.map": "/kaidouya.github.io/tomato-bell/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.b9489aab.chunk.css.map": "/kaidouya.github.io/tomato-bell/static/css/main.b9489aab.chunk.css.map"
+    "main.css": "/tomato-bell/static/css/main.b9489aab.chunk.css",
+    "main.js": "/tomato-bell/static/js/main.d053fcd8.chunk.js",
+    "main.js.map": "/tomato-bell/static/js/main.d053fcd8.chunk.js.map",
+    "runtime~main.js": "/tomato-bell/static/js/runtime~main.ceb7a60e.js",
+    "runtime~main.js.map": "/tomato-bell/static/js/runtime~main.ceb7a60e.js.map",
+    "static/css/2.764ccc25.chunk.css": "/tomato-bell/static/css/2.764ccc25.chunk.css",
+    "static/js/2.bce4f8a0.chunk.js": "/tomato-bell/static/js/2.bce4f8a0.chunk.js",
+    "static/js/2.bce4f8a0.chunk.js.map": "/tomato-bell/static/js/2.bce4f8a0.chunk.js.map",
+    "index.html": "/tomato-bell/index.html",
+    "precache-manifest.a255a6a7bb63c8160db1967bc3b6508b.js": "/tomato-bell/precache-manifest.a255a6a7bb63c8160db1967bc3b6508b.js",
+    "service-worker.js": "/tomato-bell/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/tomato-bell/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.b9489aab.chunk.css.map": "/tomato-bell/static/css/main.b9489aab.chunk.css.map"
   }
 }
