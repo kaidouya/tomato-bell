@@ -4,64 +4,80 @@ import PropTypes from 'prop-types';
 
 class Counter extends Component {
     static propTypes = {
-        minutes: PropTypes.number,
         restTime: PropTypes.number,
+        minutes: PropTypes.number,
+        seconds: PropTypes.number,
         isMove: PropTypes.bool
     }
 
     static defaultProps = {
-        minutes: 0,
         restTime: 0,
+        minutes: 0,
+        seconds: 0,
         isMove: false
     }
 
     constructor(props) {
         super(props);
         this.state = {
+            // 休息時間
             restTime: props.restTime,
-            isMove: props.isMove,
+            // 分鐘
             minutes: props.workTime,
-            seconds: 0,
+            // 秒鐘
+            seconds: props.seconds,
+            // 是否啟動
+            isMove: props.isMove,
         }
     }
 
-    headleNumber = () => {
-
-        // 第一次進入
-        if (this.state.minutes === this.props.workTime) {
-            this.setState({
-                minutes: this.state.minutes - 1,
-                seconds: this.state.seconds + 59
-            });
-        }
-
-        // 第二次之後
-        if (this.state.seconds !== 0 && this.state.minutes - 1 >= 0) {
-            this.setState({
-                seconds: this.state.second - 1
-            })
-        }
-
-        // 當秒數跑完的時候
-        if (this.state.seconds === 0 && this.state.minutes - 1 >= 0) {
-            this.setState({
-                minutes: this.state.minutes - 1,
-                seconds: 59,
-            });
-        }
-
-        //當都跑完的時候
-        if (this.state.seconds === 0 && this.state.minutes === 0) {
-
-        }
-    }
-
-    componentDidUpdate() {
-        console.log(this.state.isMove);
+    headleNumber() {
         if (this.state.isMove) {
-            window.setInterval(function () {
+            // 當秒針等於0的時候
+            if (this.state.seconds === 0) {
+                //先檢查分針是否有時間
+                if (this.state.minutes === 0) {
+                    clearInterval(this.intervalId);
+                    return;
+                } else {
+                    this.setState({
+                        minutes: this.state.minutes - 1,
+                        seconds: this.state.seconds + 59
+                    });
+                    return;
+                }
+            }
+
+            // 持續倒數
+            this.setState({
+                seconds: this.state.seconds - 1
+            });
+        }else{
+            return;
+        }
+    }
+
+    timerHandle() {
+        if (this.state.isMove) {
+            this.intervalId = setInterval(() => {
                 this.headleNumber();
             }, 1000);
+        } else {
+            clearInterval(this.intervalId);
+        }
+
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.isMove !== prevProps.isMove) {
+            this.setState({
+                isMove: this.props.isMove
+            },()=>{
+            // 呼叫數字處理
+            this.headleNumber();
+            // 呼叫計時器
+            this.timerHandle();
+            });
         }
     }
 

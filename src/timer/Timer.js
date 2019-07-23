@@ -16,10 +16,9 @@ class Timer extends Component {
     }
 
     render() {
-        console.log(this.state.open);
         return (
             <div className={style['timer-container']}>
-                <Counter workTime={25} restTime={5} isMove={this.state.open} />
+                <Counter workTime={0} seconds={10} restTime={5} isMove={this.state.open} />
                 <div className={style['circle-body']}>
                     <div className={style['circle-inner']} onClick={this.toogle}>
                         <span className={style['play-btn']}>
