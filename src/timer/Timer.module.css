@@ -28,6 +28,10 @@
   cursor: pointer;
 }
 
+.circle-inner.active {
+  background: #fff;
+}
+
 .play-btn {
   position: relative;
   display: flex;
